@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap');
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 50px 0 80px;    
+}
+
+.nunito-sans {
+    font-family: 'Nunito Sans', sans-serif;    
+}
+
+.yeseva-one {
+    font-family: 'Yeseva One', cursive;
+}
+
+/* HEADER START */
+
+.header {
+    width: 100%;
+    height: 83px;
+    background-color: #131313;    
+}
+
+.header__wrapper {
+    display: flex;       
+}
+
+.header__block {
+    padding: 33px 130px 35px 13px;
+}
+
+.header__logo {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #E3B873;
+    text-decoration: none;
+}
+
+.header__nav {
+    display: flex;    
+    align-items: center;
+}
+
+.header__link {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-decoration: none;   
+}
+
+.header__link:not(:last-child) {
+    margin-right: 52px; 
+}
+
+.header__contacts {
+    /* padding-left: 40px; */
+    display: flex;
+    align-items: center;
+    
+}
+
+.header__number {
+    margin-left: 100px;
+    margin-right: 66px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #E3B873;
+}
+
+.btn {
+    display: inline-flex;
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #E3B873;
+    height: 37px;
+    min-width: 161px;    
+    align-items: center;
+    justify-content: center;
+    transition: backgroundcolor .3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 2px; 
+}
+
+.btn:hover {
+    background-color: #a07022;
+}
+
+.header__link:hover {
+    color: #E3B873;    
+    transition: color .3s ease;
+}
+
+.header__link.active {
+    color: #E3B873;   
+}
+/* HEADER END */
+
+
+/* INTRO START */ 
+.intro {
+    height: 720px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.intro::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    content: "";
+}
+
+.intro__content {
+    height: 707px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.intro__title {  
+    padding-bottom: 11px;      
+    padding-left: 63px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.intro__highlight {
+    color: #E3B873;
+}
+
+.intro__text {
+    padding-top: 6px;
+    padding-left: 60px;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.intro__button {    
+    margin: 27px 11px 0 59px;
+    color: #fff;        
+    height: 51px;
+    min-width: 213px;
+}
+
+.uncolored {
+    background-color: unset;
+    border: 1px solid #FFFFFF;
+    margin-left: 0;
+}
+
+.intro__button:hover {
+    background-color: #a07022;
+}
+/* INTRO END
+
+
+/* INFO START */
+
+.info {
+    background-color: #131313;
+}
+
+.info__content {    
+    margin-left: 57px;
+}
+
+.info__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 109px 120px 50px 0;
+}
+
+.info__link {
+    padding-bottom: 7px;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.info__link:not(:last-child) {
+    margin-right: 60px;
+}
+
+.info__link.active {
+    border-bottom: 1px #E3B873 solid;
+    color: #E3B873;
+}
+
+.info__link:hover {
+    border-bottom: 1px #E3B873 solid;
+    color: #E3B873;    
+    transition: color .3s ease;
+}
+
+.info__decoration {    
+    float: right;
+}
+
+.info__repair {
+    display: grid;
+    grid-template-rows: 110px 138px;
+    grid-template-columns: 195px 180px;    
+}
+
+.info__title {
+    padding: 0 0 28px 0;      
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    color: #E3B873;
+    text-transform: uppercase;
+}
+
+.info__row {
+    padding-bottom: 50px;
+    letter-spacing: 0.1px;
+    font-size: 14px;    
+    font-style: normal;
+    font-weight: 400;    
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.info__repair-position {    
+    padding-right: 50px;
+    width: 100px;
+}
+
+.info__description { 
+    font-size: 18px;   
+    font-style: normal;
+    font-weight: 400;    
+    line-height: 25px;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.info__text { 
+    padding-top: 7px;
+    letter-spacing: 0.8px;   
+    font-size: 13px;   
+    font-style: normal;
+    font-weight: 400;    
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.info__item {
+    padding: 88px 55px 262px 0;   
+    display: flex;   
+    justify-content: center;    
+}
+
+
+.js-btn {
+    padding-bottom: 7px;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-decoration: none;    
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.js-btn:not(:last-child) {
+    margin-right: 60px;
+}
+
+.js-btn.active {
+    border-bottom: 1px #E3B873 solid;
+    color: #E3B873;
+}
+
+.js-btn:hover {
+    border-bottom: 1px #E3B873 solid;
+    color: #E3B873;    
+    transition: color .3s ease;
+}
+
+
+.slider {
+    margin-right: 0px;
+    width: 679px;
+    height: 482px;
+    right: 100px;
+    border: 2px solid red;    
+    overflow: hidden;    
+}
+
+.slider-line {
+    height: 256px;
+    width: 2037px;
+    background-color: orangered;
+    /* display: flex;     */
+    position: relative;  
+    transition: all ease 1s;
+    
+}
+
+.info__arrows {
+    display: flex;
+}
+
+.info__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_arrow {
+    margin-right: 30px;
+}
+
+.dot {
+    margin-right: 17px;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;    
+}
+
+.dot:hover {
+    background: #FFFFFF;
+    transition: color .3s ease;
+}
+
+.active { background: #fff; }
+
+.info__img {
+    width: 46px;
+    cursor: pointer;
+}
+
+
+
+
+/* INFO END */
+
