@@ -1,9 +1,11 @@
 const sliderLine =  document.querySelector('.slider-line'),
     prevButton = document.querySelector('.left_arrow'),
     nextButton = document.querySelector('.right_arrow'),
-    dots = document.querySelectorAll('.dot');
+    dots = document.querySelectorAll('.dot'),
+    jsBtn = document.querySelector('.js-btn');
 let position = 0,
-    dotIndex = 0;
+    dotIndex = 0,
+    wordIndex = 0;
 
 //Function
 const nextSlide = () => {
@@ -32,17 +34,14 @@ const prevSlide = () => {
 
 const thisSlide = (index) => {
     for (let dot of dots) {
-        dot.classList.remove('acvite')
+        dot.classList.remove('active')
     }
     dots[index].classList.add('active')
 }
 
-
-
 //EventListeners
 nextButton.addEventListener('click', nextSlide);
 prevButton.addEventListener('click', prevSlide);
-
 
 dots.forEach( (dot, index) => {
     dot.addEventListener('click', () => {
@@ -53,42 +52,6 @@ dots.forEach( (dot, index) => {
     })
 })
 
-
-
-
-
-
-
-
-
-
-
-// jsBtn.forEach( (jsBtn, index) => {
-//     jsBtn.addEventListener('click', () => {
-//         position = 679 * index
-//         sliderLine.style.left = -position + 'px'
-//     })
-// })
-
-
-
-
-
-
-
-
-// document.querySelector('.right_arrow').addEventListener('click', () => {
-//     position = position + 679;
-//     if (position > 1358) {
-//         position = 0;
-//     }
-//     sliderLine.style.left = -position + 'px';
-// });
-
-// document.querySelector('.left_arrow').addEventListener('click', () => {
-//     position = position - 679;
-//     if (position < 0) {
-//         position = 1358;
-//     }
-//     sliderLine.style.left = -position + 'px';
-// });
+setInterval( () => {
+    nextSlide()
+}, 3000)

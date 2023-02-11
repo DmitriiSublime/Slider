@@ -186,7 +186,7 @@
     background-color: #131313;
 }
 
-.info__content {    
+.info__content {     
     margin-left: 57px;
 }
 
@@ -221,6 +221,10 @@
     border-bottom: 1px #E3B873 solid;
     color: #E3B873;    
     transition: color .3s ease;
+}
+
+.info__block {
+    display: flex;
 }
 
 .info__decoration {    
@@ -286,7 +290,7 @@
 }
 
 
-.jsBtn {
+.js-btn {
     padding-bottom: 7px;
     font-family: 'Yeseva One', cursive;
     font-style: normal;
@@ -298,28 +302,27 @@
     color: rgba(255, 255, 255, 0.3);
 }
 
-.jsBtn:not(:last-child) {
+.js-btn:not(:last-child) {
     margin-right: 60px;
 }
 
-.jsBtn.active {
+.js-btn.active {
     border-bottom: 1px #E3B873 solid;
     color: #E3B873;
 }
 
-.jsBtn:hover {
+.js-btn:hover {
     border-bottom: 1px #E3B873 solid;
     color: #E3B873;    
     transition: color .3s ease;
 }
 
 
-.slider {
+.slider {    
     margin-right: 0px;
     width: 679px;
     height: 482px;
-    right: 100px;
-    border: 2px solid red;    
+    right: 100px;    
     overflow: hidden;    
 }
 
@@ -327,7 +330,6 @@
     height: 256px;
     width: 2037px;
     background-color: orangered;
-    /* display: flex;     */
     position: relative;  
     transition: all ease 1s;
     
@@ -335,6 +337,10 @@
 
 .info__arrows {
     display: flex;
+}
+
+.left_arrow {
+    margin-right: 30px;
 }
 
 .info__dots {
@@ -370,7 +376,9 @@
     cursor: pointer;
 }
 
-
+.text {
+    margin-right: 30px;
+}
 
 
 /* INFO END */
