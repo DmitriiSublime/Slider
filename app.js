@@ -9,24 +9,66 @@ let position = 0,
 const nextSlide = () => {
     if (position < (dots.length - 1) * 679) {
         position += 679
+        dotIndex++
     } else {
         position = 0
+        dotIndex = 0
     }   
     sliderLine.style.left = -position + 'px'
+    thisSlide(dotIndex)
 }
 
 const prevSlide = () => {
     if (position > 0) {
         position -= 679
+        dotIndex--
     } else {
         position = (dots.length - 1) * 679
+        dotIndex = (dots.length - 1)
     }
     sliderLine.style.left = -position + 'px'
+    thisSlide(dotIndex)
 }
+
+const thisSlide = (index) => {
+    for (let dot of dots) {
+        dot.classList.remove('acvite')
+    }
+    dots[index].classList.add('active')
+}
+
+
 
 //EventListeners
 nextButton.addEventListener('click', nextSlide);
 prevButton.addEventListener('click', prevSlide);
+
+
+dots.forEach( (dot, index) => {
+    dot.addEventListener('click', () => {
+        position = 679 * index
+        sliderLine.style.left = -position + 'px'
+        dotIndex = index
+        thisSlide(dotIndex)
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+// jsBtn.forEach( (jsBtn, index) => {
+//     jsBtn.addEventListener('click', () => {
+//         position = 679 * index
+//         sliderLine.style.left = -position + 'px'
+//     })
+// })
 
 
 

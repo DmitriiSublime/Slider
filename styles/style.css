@@ -286,7 +286,7 @@
 }
 
 
-.js-btn {
+.jsBtn {
     padding-bottom: 7px;
     font-family: 'Yeseva One', cursive;
     font-style: normal;
@@ -298,16 +298,16 @@
     color: rgba(255, 255, 255, 0.3);
 }
 
-.js-btn:not(:last-child) {
+.jsBtn:not(:last-child) {
     margin-right: 60px;
 }
 
-.js-btn.active {
+.jsBtn.active {
     border-bottom: 1px #E3B873 solid;
     color: #E3B873;
 }
 
-.js-btn:hover {
+.jsBtn:hover {
     border-bottom: 1px #E3B873 solid;
     color: #E3B873;    
     transition: color .3s ease;
